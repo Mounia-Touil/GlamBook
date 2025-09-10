@@ -1,0 +1,161 @@
+/* Base setup */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff0f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container and Header */
+  .profile-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .profile-header h2 {
+    color: #b3002d;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  
+  .profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .profile-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .profile-card {
+    flex: 1 1 300px;
+    max-width: 350px;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  }
+  
+  
+  .profile-card:hover {
+    transform: translateY(-3px);
+  }
+  
+  .profile-card h3,
+  .card-header {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #b3002d;
+    border-bottom: 1px solid #f2cdd5;
+    padding-bottom: 5px;
+  }
+  
+  /* Inputs and Labels */
+  .profile-card label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .profile-card input[type="text"],
+  .profile-card input[type="password"],
+  .profile-card input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  /* Buttons */
+  .profile-card button,
+  .btn-pink,
+  .btn-teal {
+    padding: 10px 16px;
+    margin-top: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .btn-pink {
+    background-color: #b3002d;
+    color: white;
+  }
+  
+  .btn-pink:hover {
+    background-color: #990026;
+  }
+  
+  .btn-teal {
+    background-color: #d22d2d;
+    color: white;
+  }
+  
+  .btn-teal:hover {
+    background-color: #cc73c2;
+  }
+  
+  /* Outline Button */
+  .btn-outline-pink {
+    border: 2px solid #b3002d;
+    color: #b3002d;
+    background: white;
+    font-weight: bold;
+    border-radius: 6px;
+  }
+  
+  .btn-outline-pink:hover {
+    background: #b3002d;
+    color: white;
+  }
+  
+  /* Profile Picture */
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #b3002d;
+  }
+  
+  /* Checkbox alignment */
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  
+  /* Responsive (optional, for mobile) */
+  @media (max-width: 992px) {
+    .profile-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .profile-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
